@@ -13,6 +13,9 @@
 		EB52590A23D0D4A1008A562E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB52590823D0D4A1008A562E /* Main.storyboard */; };
 		EB52590C23D0D4A7008A562E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB52590B23D0D4A7008A562E /* Assets.xcassets */; };
 		EB52590F23D0D4A7008A562E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB52590D23D0D4A7008A562E /* LaunchScreen.storyboard */; };
+		EB52591923D0DB0A008A562E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52591823D0DB0A008A562E /* Model.swift */; };
+		EB52591C23D1169B008A562E /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB52591A23D1169B008A562E /* CountryTableViewCell.swift */; };
+		EB52591D23D1169B008A562E /* CountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB52591B23D1169B008A562E /* CountryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EB52590B23D0D4A7008A562E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB52590E23D0D4A7008A562E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB52591023D0D4A7008A562E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB52591823D0DB0A008A562E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EB52591A23D1169B008A562E /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		EB52591B23D1169B008A562E /* CountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				EB52590223D0D4A1008A562E /* AppDelegate.swift */,
 				EB52590423D0D4A1008A562E /* SceneDelegate.swift */,
-				EB52590623D0D4A1008A562E /* ViewController.swift */,
-				EB52590823D0D4A1008A562E /* Main.storyboard */,
+				EB52591F23D162BB008A562E /* Controller */,
+				EB52591E23D16279008A562E /* View */,
+				EB52592023D162DE008A562E /* Model */,
 				EB52590B23D0D4A7008A562E /* Assets.xcassets */,
 				EB52590D23D0D4A7008A562E /* LaunchScreen.storyboard */,
 				EB52591023D0D4A7008A562E /* Info.plist */,
 			);
 			path = "MVC tableView";
+			sourceTree = "<group>";
+		};
+		EB52591E23D16279008A562E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB52591A23D1169B008A562E /* CountryTableViewCell.swift */,
+				EB52591B23D1169B008A562E /* CountryTableViewCell.xib */,
+				EB52590823D0D4A1008A562E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB52591F23D162BB008A562E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB52590623D0D4A1008A562E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB52592023D162DE008A562E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB52591823D0DB0A008A562E /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52591D23D1169B008A562E /* CountryTableViewCell.xib in Resources */,
 				EB52590F23D0D4A7008A562E /* LaunchScreen.storyboard in Resources */,
 				EB52590C23D0D4A7008A562E /* Assets.xcassets in Resources */,
 				EB52590A23D0D4A1008A562E /* Main.storyboard in Resources */,
@@ -138,9 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB52591923D0DB0A008A562E /* Model.swift in Sources */,
 				EB52590723D0D4A1008A562E /* ViewController.swift in Sources */,
 				EB52590323D0D4A1008A562E /* AppDelegate.swift in Sources */,
 				EB52590523D0D4A1008A562E /* SceneDelegate.swift in Sources */,
+				EB52591C23D1169B008A562E /* CountryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
